@@ -1,0 +1,303 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+  overflow-x: hidden;
+}
+
+header{ 
+    background-color: #D43F3F;
+    position: fixed;
+    width: 100vw;
+    height: 165px;
+    z-index: 100;
+    background-size: cover;
+}  
+
+
+main {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  font-family: 'ZCOOL XiaoWei';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  
+  color: #000000;
+  }
+
+  .logo {
+    width: 15em;
+    height: 7em;
+  }
+  .navbar {
+    position: absolute;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%
+    
+
+  }
+
+  .navbar a {
+    color:rgb(51, 47, 47);
+    font-size: calc(0.2rem + 1vw);
+    font-weight: bold;
+  }
+
+  .navbar .nav-links ul {
+    display: flex; 
+     
+  }
+
+  .navbar .nav-links ul li {
+    margin:0 25px; 
+     
+  } 
+  .navbar.nav-links ul li.active a {
+    color: #D43F3F;
+    font-weight: 600; 
+  } 
+
+  .navbar .menu-hamburger {
+    display: none;
+    width: 35px;
+    position: absolute;
+    top: 0px;
+    right: 50px;
+
+  }
+
+  
+.nav-links ul li a::after {
+  content: "";
+  display: block;
+  width: 0; /* Initialement, la barre a une largeur de zéro */
+  height: 2px; /* Hauteur de la barre */
+  background-color: #fff9f9; /* Couleur de la barre */
+  transition: width 0.3s ease; /* Animation de la largeur */
+}
+
+/* Au survol, augmentez la largeur de la barre */
+.nav-links ul li a:hover::after {
+  width: 100%;
+}
+
+
+.nav-links ul li a:hover {
+  color: white;
+}
+
+.stickers {
+  margin: 10px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  
+}
+
+.stickers a {
+  margin: 10px;
+}
+
+.whitebarhead {
+  width: 100vw;
+  height: 20vh;
+  background-color: white;
+}
+
+.whitebar {
+  width: 100vw;
+  height: 2vh;
+  background-color: white;
+}
+
+ @media screen and (max-width: 900px) {
+    .navbar {
+      padding: 0; 
+    }
+    .navbar .menu-hamburger {
+      display: block;
+    }
+    .nav-links {
+      top: 0;
+      left: 0;
+      position: absolute;
+      background-color: rgba(255, 255, 255, 0.20);
+      backdrop-filter: blur ;
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      justify-content: start;
+      align-items:start;
+      margin-left: -100%;
+      transition: all 0.5s ease;
+ 
+      
+    }
+
+    .nav-links.mobile-menu {
+      margin-left: 0;
+  
+    }
+
+    .nav-links ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .navbar .nav-links ul li {
+      margin: 10px 25px; 
+      font-size: 1.2em;
+       
+    } 
+
+    .navbar a {
+      color:rgb(243, 243, 243);
+      font-size: calc(0.5rem + 1vw);
+      font-weight: bold;
+    }
+  
+  }
+
+
+
+.photo{
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(3, 3, 3);
+  margin: 0rem;
+  overflow: hidden;
+}
+
+p {
+  color: rgb(77, 73, 73);
+  font-size: calc(2rem + 1vw);
+  padding: 10px 10px 10px 10px;
+  
+}
+
+.backgroundtxtcolor {
+  background-color: #ffffff;
+  padding: 10px 10px 10px 10px;
+  
+  line-height: 60px;
+  
+}
+
+.fb-container {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  background-color: #302e2e;
+  
+}
+
+.fb-page {
+  margin: 0 10px 10px 0;
+}
+
+.rendezvous {
+  font-size: calc(2rem + 1vw);
+  color: rgb(0, 0, 0);
+  margin: 10px;
+}
+.rendezvous2 {
+  font-size: calc(1rem + 1vw);
+  color: rgb(0, 0, 0);
+  margin: 10px;
+}
+
+.fb-container iframe {
+  margin: 10px;
+}
+
+
+
+
+
+
+#image-track {
+  display: flex;
+  gap: 4vmin;
+  position: absolute;
+  left: 10%;
+  top: 60%;
+  transform: translate(0%, -50%); 
+  user-select: none; /* -- Prevent image highlighting -- */
+}
+
+#image-track > .image {
+  width: 40vmin;
+  height: 56vmin;
+  object-fit: cover;
+  object-position: 100% center;
+  
+}
+
+
+
+.photo .menu-toggled > .meta-link > span {
+  color: rgb(30, 30, 30);
+}
+
+
+.meta-link {
+  align-items: center;
+  backdrop-filter: blur(3px);
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  bottom: 10px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+  cursor: pointer;  
+  display: inline-flex;
+  gap: 5px;
+  left: 10px;
+  padding: 10px 20px;
+  position: fixed;
+  text-decoration: none;
+  transition: background-color 400ms, border-color 400ms;
+  z-index: 10000;
+}
+
+.meta-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.meta-link > i, .meta-link > span {
+  height: 20px;
+  line-height: 20px;
+}
+
+.meta-link > span {
+  color: white;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+}
+
+
+.rdv {
+  background-color: #535151;
+}
+
+.footer {
+  height: 200vh;
+}
+
