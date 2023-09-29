@@ -12,12 +12,12 @@ body {
   width: 100vw;
   margin: 0;
   padding: 0;
-  background: #ffffff;
+  background: #fdfdfd;
   overflow-x: hidden;
 }
 
 header{ 
-    background-color: #D43F3F;
+    background-color: #a39898;
     position: fixed;
     width: 100vw;
     height: 165px;
@@ -69,7 +69,7 @@ main {
     margin:0 25px; 
      
   } 
-  .navbar.nav-links ul li.active a {
+  .active {
     color: #D43F3F;
     font-weight: 600; 
   } 
@@ -90,7 +90,7 @@ main {
   width: 0; /* Initialement, la barre a une largeur de zéro */
   height: 2px; /* Hauteur de la barre */
   background-color: #fff9f9; /* Couleur de la barre */
-  transition: width 0.3s ease; /* Animation de la largeur */
+  transition: width 0.3s ease-in-out; /* Animation de la largeur */
 }
 
 /* Au survol, augmentez la largeur de la barre */
@@ -117,7 +117,7 @@ main {
 
 .whitebarhead {
   width: 100vw;
-  height: 20vh;
+  height: 19vh;
   background-color: white;
 }
 
@@ -188,17 +188,101 @@ main {
 p {
   color: rgb(77, 73, 73);
   font-size: calc(2rem + 1vw);
-  padding: 10px 10px 10px 10px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
   
 }
 
+
+
 .backgroundtxtcolor {
-  background-color: #ffffff;
-  padding: 10px 10px 10px 10px;
+  background-color: #fcfcfc;
+  padding: 10px;
   
   line-height: 60px;
   
 }
+
+.occaz {
+ background-color: #535151;
+ 
+}
+
+
+
+.nosoccaz img {
+ width: 90vw;
+ height: 60vh;
+}
+
+
+.equip {
+  background-color: #df4a4a;
+}
+
+.equipe {
+  margin: 10px;
+  color: #000000;
+  
+}
+
+
+#equipements {
+  text-align: center;
+  padding: 0 0;
+}
+
+.equipements-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 80vw;
+  margin: 0 auto;
+  
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.equipement-item {
+  flex: 0 0 calc(25% - 15px);
+  background-color: #111010;
+  padding: 5px;
+  border: 1px solid #ddd;
+  text-align: center;
+  margin: 2px;
+  transition: transform 0.3s;
+
+}
+
+.equipement-item:hover {
+  transform: scale(1.1); /* Agrandir l'image au survol */
+}
+
+.equipement-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+
+
+
+
+.carousel-container {
+  margin: 0 auto; /* Centre le conteneur horizontalement */
+  max-width: 80vw; /* Définit la largeur maximale du conteneur */
+}
+
+
+
+
 
 .fb-container {
   display: flex;

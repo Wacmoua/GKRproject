@@ -43,43 +43,5 @@ window.onmousemove = e => handleOnMove(e);
 
 window.ontouchmove = e => handleOnMove(e.touches[0]);
 
-const menuhamburger = document.querySelector (".menu-hamburger")
-const navLinks = document.querySelector (".nav-links")
 
-menuhamburger.addEventListener('click', (event) => {
-  event.preventDefault();
-  navLinks.classList.toggle('mobile-menu')
-  })
 
-  (function (d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s);
-    js.id = id;
-    js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v11.0";
-    fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));
-
-  $(document).ready(function(){
-    console.log("Carrousel initialisé");
-    $(".owl-carousel").owlCarousel({
-      items: 3, // Le nombre d'éléments visibles à la fois
-      loop: true, // Pour activer la lecture en boucle
-      autoplay: true, // Pour activer la lecture automatique
-      autoplayTimeout: 3000, // Durée de l'intervalle d'autoplay en millisecondes
-      responsive: {
-        0: {
-          items: 1 // Nombre d'éléments visibles à l'écran pour les écrans étroits
-        },
-        768: {
-          items: 2 // Nombre d'éléments visibles à l'écran pour les écrans plus larges
-        },
-        992: {
-          items: 3 // Nombre d'éléments visibles à l'écran pour les écrans plus larges encore
-        }
-      }
-    });
-  });
-  
-
-  

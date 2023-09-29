@@ -4,12 +4,14 @@
    
     margin: 100px auto;
     overflow: hidden;
-    border: 1px solid #ffffff;
-    border-radius: 20px;
+    border: 3px solid #8d8989;
+    border-radius: 25px;
+    
+    
   
   }
   .slider-1 .slider {
-    animation: slider-1 12s infinite ease-in-out;
+    animation: slider-1 25s infinite ease-in-out;
     display: flex;
   
     /* Si on veut faire glisser vers la droite */
@@ -17,13 +19,19 @@
     /* flex-direction: row-reverse; */
   }
   .slider-1 p {
-    background: #000000;
+    background: #ebe6e6;
     flex-shrink: 0;
     padding: 150px 0;
     width: 100%;
     text-align: center;
     font-size: calc(1rem + 1vw);
-    color: #ffffff;
+    color: #837777;
+  }
+
+  .orange {
+    font-size: calc(3rem + 1vw);
+    font-weight: bolder;
+    color: rgb(248, 137, 10);
   }
   
   
@@ -35,24 +43,21 @@
   */
   
   @keyframes slider-1 {
-    0%,
-    20% {
-      transform: translateX(0);
+    0%, 20% {
+        transform: translateX(0);
     }
-    25%,
-    45% {
-      transform: translateX(-100%);
+    25%, 45% {
+        transform: translateX(-100%);
     }
-    50%,
-    70% {
-      transform: translateX(-200%);
+    50%, 70% {
+        transform: translateX(-200%);
     }
-    75%,
-    95% {
-      transform: translateX(-300%);
+    75%, 95% {
+        transform: translateX(-300%);
     }
     100% {
-      transform: translateX(-400%);
+        transform: translateX(-400%);
     }
-  } 
-  
+   
+}
+

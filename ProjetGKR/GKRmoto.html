@@ -9,15 +9,16 @@
       href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="carooousel.css" />
+    
     <link rel="stylesheet" href="slider.css" />
 
     <title>GKRBikes</title>
   </head>
   <body>
     <header>
+      <section id="acceuil">
       <img src="imgprojet/GKRLOGO.jpg" class="logo" />
-      <div class="stickers" id="acceuil">
+      <div class="stickers">
         <h1>
           <a href="https://www.facebook.com/gkrmoto" target="_blank">
             <img src="imgprojet/facebook.png" alt="Facebook" />
@@ -38,12 +39,12 @@
       <nav class="navbar">
         <div class="nav-links">
           <ul>
-            <li><a href="#acceuil" class="active">Acceuil</a></li>
-            <li><a href="#nosrea">Nos realisations</a></li>
-            <li><a href="#">Equipements et accesoires</a></li>
-            <li><a href="#">Nos occasions</a></li>
-            <li><a href="#rdv">Prise de rendez-vous</a></li>
-            <li><a href="#rdv">Contact</a></li>
+            <li class="nav-link"><a href="#acceuil">Acceuil</a></li>
+            <li class="nav-link"><a href="#nosrea">Nos realisations</a></li>
+            <li class="nav-link"><a href="#occasion">Nos occasions</a></li>
+            <li class="nav-link"><a href="#equipements">Equipements et accesoires</a></li>
+            <li class="nav-link"><a href="#rdv">Prise de rendez-vous</a></li>
+            <li class="nav-link"><a href="#contact">Contact</a></li>
           </ul>
         </div>
         <img
@@ -52,6 +53,8 @@
           class="menu-hamburger"
         />
       </nav>
+    </section>
+    
     </header>
     <div class="whitebarhead"></div>
     <main>
@@ -65,6 +68,7 @@
           <p class="start">
             <span class="backgroundtxtcolor">Nos réalisations</span>
           </p>
+         
           <img class="image" src="imgprojet/BMW1.jpg" draggable="false" />
           <img class="image" src="imgprojet/BMW2.jpeg" draggable="false" />
           <img class="image" src="imgprojet/bmw3.jpg" draggable="false" />
@@ -80,6 +84,59 @@
           </p>
         </section>
       </div>
+      <div class="whitebar"></div>
+
+      <section id="occasions" class="occaz">
+
+      
+      <p class="equipe">
+        <span class="backgroundtxtcolor">Nos occasions</span>
+      </p>
+      <div class="nosoccaz" id="occasions">
+        <img src="imgprojet/sportives.jpg" alt="Nos occasions">
+      </div>
+    </section>
+
+    <div class="whitebar"></div>
+
+
+      <section id="equipements" class="equip">
+        <p class="equipe">
+          <span class="backgroundtxtcolor">Equipements et Accesoires</span>
+        </p>
+        <div class="equipements-grid">
+          <div class="row">
+            <div class="equipement-item" >
+              <img src="imgprojet/Equip/pneu.jpg"  alt="Equipement 1">
+              
+            </div>
+            <div class="equipement-item">
+              <img src="imgprojet/Equip/motul.jpg" alt="Equipement 2">
+            </div>
+            <div class="equipement-item">
+              <img src="imgprojet/Equip/echappement.jpg" alt="Equipement 3">
+            </div>
+            <div class="equipement-item">
+              <img src="imgprojet/Equip/kitchaine.jpg" alt="Equipement 4">
+            </div>
+          </div>
+          <div class="row">
+            <div class="equipement-item">
+              <img src="imgprojet/Equip/brembo.jpg" alt="Equipement 5">
+            </div>
+            <div class="equipement-item">
+              <img src="imgprojet/Equip/chaft.jpg" alt="Equipement 6">
+            </div>
+            <div class="equipement-item">
+              <img src="imgprojet/Equip/BSbatterie.jpg" alt="Equipement 7">
+            </div>
+            <div class="equipement-item">
+              <img src="imgprojet/Equip/shift.jpg" alt="Equipement 8">
+            </div>
+          </div>
+        </div>
+      </section>
+      
       <div class="whitebar"></div>
 
       <section class="rdv" id="rdv">
@@ -102,16 +159,27 @@
         </p>
       </section>
       <div class="whitebar"></div>
-
+       
+      <div class="carousel-container">
       <div class="slider-container slider-1">
         <div class="slider">
-          <p>Texte template 1</p>
-          <p>Texte template 2</p>
-          <p>Texte template 3</p>
-          <p>Texte template 4</p>
-          <p>Texte template 1</p>
+          <p><span class="orange">"</span></br>Découverte de l’entreprise fraîchement installée sur Flines lea Raches dans les ateliers de la rue Émile Glineur
+            Acceuil sympathique, atelier hyper propre
+            
+            Devis en poche, la petite pan European pourra se refaire une petite révision avant le grand départ pour juillet 🤩</br><span class="orange">"</span></p>
+          <p><span class="orange">"</span></br>Prestation au top. Belle découverte. Les patrons sont très sympas. Tarifs très raisonnables. Je recommande 👍🏍️ super ma bécane à repris un coup de jeune .</br><span class="orange">"</span></p>
+          <p><span class="orange">"</span></br>Bonjour, je recommande ce garage à toute personnes ayant une moto répond toujours aux appels,devis rapide et correct,délais très rapide,travail très propre et efficace.
+            Très bonne relation avec les clients.
+            Vivement conseillé 😉😉.
+            Bonne continuation</br><span class="orange">"</span></p>
+          <p><span class="orange">"</span></br>Super garage. Je suis arrivé à l'improviste pour une tension de chaîne et il m'a pris la moto directement. En plus petit café offert! Vraiment sympa. Top!</br><span class="orange">"</span></p>
+          <p><span class="orange">"</span></br>Garage a recommander, service au top,travail parfait le tout dans une très bonne ambiance .si vous avez une révision a faire n hesitez pas ,ça sera bien fait .ce sont des passionnés .</br><span class="orange">"</span></p>
+          
+          
         </div>
       </div>
+    </div>
+    
 
       <div class="whitebar"></div>
 
@@ -131,8 +199,9 @@
       <div class="whitebar"></div>
     </main>
 
-    <footer></footer>
+    <footer id="contact"></footer>
 
     <script src="testimagejs.js"></script>
+    <script src="menu.js"></script>
   </body>
 </html>
