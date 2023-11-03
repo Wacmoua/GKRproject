@@ -253,8 +253,8 @@ p {
 
 .imgoccaz img {
 
-  width: 80vw;
-  height: 65vh;
+  width: 91vmin;
+  height: 46vmin;
 }
 
 
@@ -367,7 +367,7 @@ p {
 }
 
 footer {
-  height: 82vh;
+  height: 75vh;
   background-color: #a39898;
 }
 

@@ -131,7 +131,7 @@ main {
 
 .whitebar {
     width: 100vw;
-    height: 2vh;
+    height: 1.5vh;
     background-color: white;
 }
 
@@ -252,8 +252,8 @@ p.titre {
 }
 
 #content-item .grid-item {
-    width: 65vw;
-    height: 55vh;
+    width: 70vmin;
+    height: 40vmin;
     max-width: fit-content;
     max-height: fit-content;
     overflow: hidden;
@@ -266,8 +266,8 @@ p.titre {
 }
 
 #content-item .grid-item img {
-    width: 65vw;
-    height: 55vh;
+    width: 70vmin;
+    height: 40vmin;
 
 
     opacity: .66;
@@ -293,7 +293,7 @@ p.titre {
 #content-item .grid-item .descrip h2 {
     margin: 0;
     color: #fff;
-    font-size: 1.5em;
+    font-size: 1,5em;
     font-family: 'Lato', sans-serif;
     letter-spacing: 1px;
 }
@@ -301,7 +301,7 @@ p.titre {
 #content-item .grid-item .descrip p {
     margin: 0;
     color: #fff;
-    font-size: calc(2rem + 1vw);
+    font-size: calc(1rem + 1vw);
     font-family: 'Lato', sans-serif;
     letter-spacing: 1px;
 }
@@ -318,68 +318,73 @@ p.titre {
 }
 
 footer {
-    height: 82vh;
+    height: 75vh;
     background-color: #a39898;
-}
+  }
+  
+  .logofooter {
+    width: 10em;
+    height: 4em;
+  }
 
-.icon {
+  .icon {
     width: 5vw;
     height: 5vh;
     margin: 15px;
-}
-
-.footer-section {
+  }
+  
+  .footer-section {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-}
-
-.adresse {
+  }
+  
+  .adresse {
     display: flex;
     flex-direction: column;
     width: 90vw;
     height: 40vh;
-
+  
     margin-top: 5px;
-}
-
-.info {
+  }
+  
+  .info {
     display: flex;
     margin-right: -40px;
     align-items: center;
     /* Ajustez la marge selon vos préférences */
-}
-
-.info p {
+  }
+  
+  .info p {
     font-size: calc(1rem + 1vw);
     color: #000000;
-}
-
-.logo-stickers {
+  }
+  
+  .logo-stickers {
     display: flex;
     flex-direction: column;
-}
-
-.stickersbis {
+  }
+  
+  .stickersbis {
     margin: 10px;
-
-}
-
-.stickersbis a {
+  
+  }
+  
+  .stickersbis a {
     margin-right: 10px;
-}
-
-.marques {
+  }
+  
+  .marques {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     margin: 10px;
-
-}
-
-.marques img {
+  
+  }
+  
+  .marques img {
     width: 10vw;
     height: 10vh;
     margin-right: 10px;
-
-}
+  
+  }
